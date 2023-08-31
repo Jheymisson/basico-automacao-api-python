@@ -7,17 +7,17 @@ with open('/Volumes/trabalho/pocs/automacao/treinamento_basico_automacao_zallpy/
 AMBIENTE = config['ambiente']
 
 if AMBIENTE == 'tst':
-    AMBIENTE_URL = '{url_path_tst_aqui}'
-    OAUTH_URL = '{url_path_aqui}/auth/realms/UnicredRealm/protocol/openid-connect/token'
-    CLIENT_ID = 'tst-'
+    AMBIENTE_URL = '{url_path}'
+    OAUTH_URL = '{url_path}/auth/realms/UnicredRealm/protocol/openid-connect/token'
+    CLIENT_ID = ''
     CLIENT_SECRET = ''
     PASSWORD = ''
 elif AMBIENTE == 'hlg':
     AMBIENTE_URL = '{url_path_hlg_aqui}'
-    OAUTH_URL = '{url_path_aqui}/auth/realms/UnicredRealm/protocol/openid-connect/token'
-    CLIENT_ID = 'hlg-'
+    OAUTH_URL = '{url_path}/auth/realms/UnicredRealm/protocol/openid-connect/token'
+    CLIENT_ID = ''
     CLIENT_SECRET = ''
-    PASSWORD = '@unicred123'
+    PASSWORD = ''
 else:
     raise ValueError("Ambiente desconhecido")
 
