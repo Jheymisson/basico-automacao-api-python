@@ -18,6 +18,7 @@ def step_impl(context):
     boleto_instancia = Boletos()
     context.uuid_titulo = boleto_instancia.gerar_boleto_normal(context.uuid, context.carteira, context.boleto_body)
 
+
 @then('é criado o uuidTitulo com sucesso')
 def step_impl(context):
     uuid_titulo = context.uuid_titulo.strip()

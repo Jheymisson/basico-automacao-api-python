@@ -7,17 +7,17 @@ with open('/Volumes/trabalho/pocs/automacao/treinamento_basico_automacao_zallpy/
 AMBIENTE = config['ambiente']
 
 if AMBIENTE == 'tst':
-    AMBIENTE_URL = '{url_path}'
-    OAUTH_URL = '{url_path}/auth/realms/UnicredRealm/protocol/openid-connect/token'
-    CLIENT_ID = ''
-    CLIENT_SECRET = ''
-    PASSWORD = ''
+    AMBIENTE_URL = 'https://servicos-tst.e-unicred.com.br'
+    OAUTH_URL = 'https://oauth-tst.e-unicred.com.br/auth/realms/UnicredRealm/protocol/openid-connect/token'
+    CLIENT_ID = 'tst-client'
+    CLIENT_SECRET = '2b029892-56fa-4805-bc83-ada1956d96c8'
+    PASSWORD = '@unicred123'
 elif AMBIENTE == 'hlg':
     AMBIENTE_URL = '{url_path_hlg_aqui}'
-    OAUTH_URL = '{url_path}/auth/realms/UnicredRealm/protocol/openid-connect/token'
-    CLIENT_ID = ''
-    CLIENT_SECRET = ''
-    PASSWORD = ''
+    OAUTH_URL = 'https://oauth-hlg.e-unicred.com.br/auth/realms/UnicredRealm/protocol/openid-connect/token'
+    CLIENT_ID = 'hlg-client'
+    CLIENT_SECRET = '417f08fe-3911-4323-b36a-ce07f70bd9d1'
+    PASSWORD = '@unicred123'
 else:
     raise ValueError("Ambiente desconhecido")
 
